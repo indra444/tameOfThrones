@@ -57,5 +57,17 @@ namespace geektrust.UnitTests
 
             Assert.Throws<TameOfThronesException>(() => _target.Convert());
         }
+
+        [Fact]
+        public void ReadUserInput_NoDuplicateValues()
+        {
+            _mockInputReader.Setup(x => x.Read())
+                .Returns("AIR Hello World\r\nSPACE Goodevening\r\nSPACE Goodevening\r\nAIR Hello World\r\nWATER Ho are you");
+
+            var result = _target.Convert();
+
+            Assert.NotNull(result);
+            Assert.Equal(3, result.Requests.Count);
+        }
     }
 }

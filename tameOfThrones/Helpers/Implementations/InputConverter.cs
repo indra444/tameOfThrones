@@ -3,6 +3,7 @@ using geektrust.Exceptions;
 using geektrust.Model;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace geektrust.Helpers
 {
@@ -34,7 +35,11 @@ namespace geektrust.Helpers
                     else if (Enum.TryParse(input[0], true, out Kingdom kingdom))
                     {
                         var req = new Request(kingdom, input[1]);
-                        request.Add(req);
+
+                        if (!request.Any(x => x.Kingdom == req.Kingdom))
+                        {
+                            request.Add(req); 
+                        }
                     }
                     else
                     {
