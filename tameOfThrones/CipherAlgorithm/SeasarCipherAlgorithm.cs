@@ -2,7 +2,7 @@
 
 namespace geektrust.CipherAlgorithm
 {
-    public class SoutherosEncryptionAlgorithm : IEncryption
+    public class SeasarCipherAlgorithm : IEncryption
     {
         private const int SmallLetterAsciiStart = 'a';
         private const int SmallLetterAsciiEnd = 'z';

@@ -3,13 +3,13 @@ using Xunit;
 
 namespace geektrust.UnitTests
 {
-    public class SoutherosEncryptionAlgorithmTests
+    public class SeasarCipherAlgorithmTests
     {
         private readonly IEncryption _southerosEncryptionAlgorithm;
 
-        public SoutherosEncryptionAlgorithmTests()
+        public SeasarCipherAlgorithmTests()
         {
-            _southerosEncryptionAlgorithm = new SoutherosEncryptionAlgorithm();
+            _southerosEncryptionAlgorithm = new SeasarCipherAlgorithm();
         }
 
         [Theory]

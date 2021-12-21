@@ -19,7 +19,7 @@ namespace geektrust
 
                 IInputReader inputReader = new FileReader(args[0]);
                 IInputConverter inputConverter = new InputConverter(inputReader);
-                IEncryption encryptionHelper = new SoutherosEncryptionAlgorithm();
+                IEncryption encryptionHelper = new SeasarCipherAlgorithm();
                 IDataHelper dataHelper = new DataHelper();
 
                 var input = inputConverter.Convert();
