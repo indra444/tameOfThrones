@@ -48,19 +48,17 @@ namespace geektrust.UnitTests
         public void GetResult_NegativePath()
         {
             //Arange
-            InputRequest request = new InputRequest(
+            InputRequest negativeRequest = new InputRequest(
                 new List<Request>
                 {
                     new Request(Kingdom.AIR, "ROZO"),
-                    new Request(Kingdom.LAND, "xcvxcv"),
-                    new Request(Kingdom.ICE, "xcvxcv"),
                 });
 
             _mockEncryptionHelper.Setup(x => x.ValidateCipherText(It.IsAny<string>(), It.IsAny<string>())).Returns(true);
             _mockDataHelper.Setup(x => x.GetEmblemForAKingdom(It.IsAny<Kingdom>())).Returns<Kingdom>(x => (Emblem)((int)x));
 
             //Act
-            var results = _target.GetResult(request);
+            var results = _target.GetResult(negativeRequest);
 
             //Assert
             Assert.Equal(TameOfThroneMessage.None, results);
