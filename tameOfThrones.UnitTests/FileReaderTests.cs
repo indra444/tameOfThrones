@@ -25,9 +25,7 @@ namespace geektrust.UnitTests
         {
             var result = _fileReader.Read();
 
-            var expected = @"AIR ROZO"
-                            +"\r\nLAND FAIJWJSOOFAMAU"
-                            + "\r\nICE STHSTSTVSASOS";
+            var expected = "AIR ROZO";
 
             Assert.Equal(expected, result);
         }
