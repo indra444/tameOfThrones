@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "geektrust", "geektrust\geektrust.csproj", "{3E1EA082-6001-4C77-BCE1-9D6F01FEA25B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tameOfThrones", "tameOfThrones\tameOfThrones.csproj", "{3E1EA082-6001-4C77-BCE1-9D6F01FEA25B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "geektrust.UnitTests", "geektrust.UnitTests\geektrust.UnitTests.csproj", "{FE516B4D-4F56-4CD6-93B7-8376700975B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tameOfThrones.UnitTests", "tameOfThrones.UnitTests\tameOfThrones.UnitTests.csproj", "{FE516B4D-4F56-4CD6-93B7-8376700975B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

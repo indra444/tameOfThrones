@@ -27,7 +27,7 @@
 	  
   </ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\geektrust\geektrust.csproj" />
+		<ProjectReference Include="..\tameOfThrones\tameOfThrones.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
