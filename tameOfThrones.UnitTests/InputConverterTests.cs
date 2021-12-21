@@ -39,7 +39,7 @@ namespace geektrust.UnitTests
         {
             _mockInputReader.Setup(x => x.Read()).Returns("AIR Hello World\r\nSPACEGoodevening");
 
-            Assert.Throws<InputFileReadValidationException>(() => _target.Convert());
+            Assert.Throws<TameOfThronesException>(() => _target.Convert());
         }
 
         [Fact]
@@ -47,7 +47,7 @@ namespace geektrust.UnitTests
         {
             _mockInputReader.Setup(x => x.Read()).Returns("AIR Hello World\r\nUniverse Goodevening");
 
-            Assert.Throws<InputFileReadValidationException>(() => _target.Convert());
+            Assert.Throws<TameOfThronesException>(() => _target.Convert());
         }
 
         [Fact]
@@ -55,7 +55,7 @@ namespace geektrust.UnitTests
         {
             _mockInputReader.Setup(x => x.Read()).Throws(new System.Exception());
 
-            Assert.Throws<InputFileReadValidationException>(() => _target.Convert());
+            Assert.Throws<TameOfThronesException>(() => _target.Convert());
         }
     }
 }

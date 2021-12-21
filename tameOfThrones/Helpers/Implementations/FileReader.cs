@@ -21,7 +21,7 @@ namespace geektrust.Helpers
             }
             catch (IOException e)
             {
-                throw new InputFileReadValidationException(e.Message);
+                throw new TameOfThronesException(e.Message);
             }
         }
     }

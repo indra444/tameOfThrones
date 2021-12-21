@@ -29,7 +29,7 @@ namespace geektrust
 
                 Console.WriteLine(result);
             }
-            catch (InputFileReadValidationException messaage)
+            catch (TameOfThronesException messaage)
             {
 
                 Console.WriteLine(messaage.Message);

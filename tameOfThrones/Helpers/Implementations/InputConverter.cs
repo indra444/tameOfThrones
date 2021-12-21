@@ -29,7 +29,7 @@ namespace geektrust.Helpers
                     var input = line.Split(" ", 2, StringSplitOptions.RemoveEmptyEntries);
                     if (input.Length < 2)
                     {
-                        throw new InputFileReadValidationException("Less than two words encountered in a line");
+                        throw new TameOfThronesException("Less than two words encountered in a line");
                     }
                     else if (Enum.TryParse(input[0], true, out Kingdom kingdom))
                     {
@@ -38,7 +38,7 @@ namespace geektrust.Helpers
                     }
                     else
                     {
-                        throw new InputFileReadValidationException("Invalid Text in the given file");
+                        throw new TameOfThronesException("Invalid Text in the given file");
                     }
                 }
 
@@ -46,7 +46,7 @@ namespace geektrust.Helpers
             }
             catch (Exception e)
             {
-                throw new InputFileReadValidationException(e.Message);
+                throw new TameOfThronesException(e.Message);
             }
         }
     }

@@ -35,7 +35,7 @@ namespace geektrust.UnitTests
         {
             _fileReader = new FileReader("InvalidFilePath");
 
-            Assert.Throws<InputFileReadValidationException>(() => _fileReader.Read());
+            Assert.Throws<TameOfThronesException>(() => _fileReader.Read());
         }
     }
 }
