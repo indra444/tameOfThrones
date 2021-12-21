@@ -33,7 +33,7 @@ namespace geektrust
                 }
             }
 
-            return count >= 3 ? result : "NONE"; 
+            return count >= 3 ? result : TameOfThroneMessage.None; 
         }
     }
 }

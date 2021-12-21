@@ -1,4 +1,5 @@
 ﻿using geektrust.CipherAlgorithm;
+using geektrust.Constants;
 using geektrust.Exceptions;
 using geektrust.Helpers;
 using System;
@@ -13,7 +14,7 @@ namespace geektrust
             {
                 if(args.Length == 0 || string.IsNullOrEmpty(args[0]))
                 {
-                    Console.WriteLine("Please specify filepath");
+                    Console.WriteLine(ExceptionMessage.SpecifyFilePath);
                     return;
                 }
 
