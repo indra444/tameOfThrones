@@ -3,7 +3,7 @@
 ### Build
 
 ```sh
-dotnet build -o .\geektrust\geektrust\
+dotnet build -o geektrust
 ``` 
 
 ### Run unit tests
@@ -15,5 +15,5 @@ dotnet test --collect="XPlat Code Coverage"
 ### Execute
 
 ```sh
- dotnet .\geektrust\geektrust\geektrust.dll "C:\Temp\tameOfThrones.txt"
+dotnet geektrust\geektrust.dll "C:\Temp\tameOfThrones.txt"
 ``` 
